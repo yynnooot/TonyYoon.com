@@ -1,0 +1,44 @@
+//NAVBAR
+body{
+  font-family: "Avenir Next";
+}
+#whole-view{
+  display: flex;
+}
+#nav{
+  position: fixed;
+  width: 20%;
+  text-align: center;
+  height: 100vh;
+  background-color: lightgrey;
+  #nav-logo {
+    width: 50%;
+    padding-top: 5rem;
+  }
+  #nav-links{
+    list-style: none;
+    padding-left: 0;
+    li{
+      padding-top: 1rem;
+    }
+  }
+}
+.components{
+  background-color: lightblue;
+  width: 80%;
+  padding-top: 8rem;
+  margin-left: 20%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+#home-container{
+  #home-features{
+    padding-top: 5rem;
+    display: flex;
+    div{
+      width:33%
+    }
+  }
+}
+
+
