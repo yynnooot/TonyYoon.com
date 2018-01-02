@@ -46,6 +46,9 @@ export default class Home extends Component {
                   <li>Information Architecture</li> 
                 </ul>
               </div>
+              <div id="home-cta">
+                <button>hire Tony</button>
+              </div>
             </div>
             
         
