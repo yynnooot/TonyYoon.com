@@ -7,36 +7,107 @@ body{
 }
 #nav{
   position: fixed;
-  width: 20%;
-  text-align: center;
+  width: 15%;
   height: 100vh;
-  background-color: lightgrey;
+  background-color: #0a1125;
   #nav-logo {
+    text-align: center;
     width: 50%;
     padding-top: 5rem;
+    margin-left: 25%;
   }
   #nav-links{
+    color: white;
     list-style: none;
-    padding-left: 0;
+    padding-right: 2rem;
+    text-align: right;
     li{
       padding-top: 1rem;
+      color: white;
+      font-size: 1.1rem;
     }
   }
 }
+//BLUE gradient
+// background: #7474BF;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 .components{
-  background-color: lightblue;
-  width: 80%;
+  //background-color: rgb(243, 243, 243);
+  width: 85%;
   padding-top: 8rem;
-  margin-left: 20%;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  margin-left: 15%;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  height: 100vh;
+  
 }
 #home-container{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 21, 47, 0.58)), to(rgba(0, 0, 0, 0.9))), url('/assets/ak.jpg');
+  background-image: linear-gradient(rgba(26, 21, 47, 0.58), rgba(0, 0, 0, 0.9)), url('/assets/ak.jpg');   
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+  // background: #7474BF;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  header{
+    
+    h1{
+      font-size: 3rem;
+      color: #c1c1c1;
+      padding: 0;
+      text-decoration: underline;
+      text-decoration-color: #113ee0;
+      #header-underline{
+        color: rgb(226, 226, 226);
+        }
+      }
+    h2{
+      color: #868686;
+    }
+  }
   #home-features{
-    padding-top: 5rem;
-    display: flex;
-    div{
-      width:33%
+    // padding-top: 5rem;
+    // display: flex;
+    position: relative;
+    // left: 1rem;
+    #skills-container{
+      h1{
+        position: relative;
+        top: 25px;
+        font-size: 4rem;
+        color: rgba(130, 125, 59, 0.2);
+        font-weight: 800;
+        left: 0rem;
+      }
+      #skills-list-container{
+        display: flex;
+        position: relative;
+        top: -2rem;
+        left: 1rem;
+        div{
+          width: 20%;
+          padding-top: 2rem;
+          h2{
+            text-decoration: underline;
+            text-decoration-color: #ffd088;
+            color: #97979c;
+          }
+          ul{
+            list-style: none;
+            padding: 0;
+            li{
+              font-size: 1.5rem;
+              padding: 0.5rem 0;
+              color: white;
+            }
+          }
+        }
+      }
     }
   }
 }
