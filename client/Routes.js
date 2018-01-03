@@ -7,7 +7,6 @@ import Dev from './Dev.js';
 import Misc from './Misc.js';
 import Contact from './Contact.js';
 
-import { Grid } from 'semantic-ui-react'
 export default class Routes extends Component {
   render(){
     return(

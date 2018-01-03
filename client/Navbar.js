@@ -31,19 +31,13 @@ export default class Navbar extends Component {
                 <Link to="/ux"><li>ux</li></Link>
                 <Link to="/misc"><li>misc</li></Link>
                 <Link to="/contact"><li>contact</li></Link>
-                {/* <Link to="/"><li name="HOME" active={activeItem === 'HOME'} onClick={this.handleItemClick} />home</li></Link>
-                <Link to="/dev"><li name='DEV' active={activeItem === 'DEV'} onClick={this.handleItemClick} />dev</li></Link>
-                <Link to="/ux"><li name='UX' active={activeItem === 'UX'} onClick={this.handleItemClick} />ux</li></Link>
-                <Link to="/misc"><li name='MISC' active={activeItem === 'MISC'} onClick={this.handleItemClick} />misc</li></Link> */}
+                
               </ul>
               <div>
                 <i></i>
                 <i></i>
               </div>
-            
-        </nav>
-         
+        </nav>  
       )
-    
   }
 }

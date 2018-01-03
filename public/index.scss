@@ -1,6 +1,11 @@
 //NAVBAR
 body{
   font-family: "Avenir Next";
+  margin:0;
+  height: 100%;
+  h1{margin:0};
+  h2{margin:0};
+  h3{margin:0};
 }
 #whole-view{
   display: flex;
@@ -19,7 +24,7 @@ body{
   #nav-links{
     color: white;
     list-style: none;
-    padding-right: 2rem;
+    padding-right: 3rem;
     text-align: right;
     li{
       padding-top: 1rem;
@@ -28,46 +33,93 @@ body{
     }
   }
 }
-//BLUE gradient
-// background: #7474BF;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 .components{
-  //background-color: rgb(243, 243, 243);
-  width: 85%;
-  padding-top: 8rem;
+  padding-top: 6rem;
   margin-left: 15%;
-  padding-left: 7rem;
+  padding-left: 5rem;
   padding-right: 7rem;
-  height: 100vh;
   
+  // height: 100vh;
+  .project-container{
+    margin-bottom: 5rem;
+  }
+  .project-header{
+    h2{
+      color: #ffd088;
+      font-family: 'Arvo', serif;
+      text-decoration: underline;
+      text-decoration-color: #f16029;
+    }
+    p{
+
+    }
+  }
+  .practice{
+    display: flex;
+    #left{
+      width: 50%
+    }
+    #right{
+      width: 50%;
+      flex-direction: column;
+    }
+  }
+  .project-double-img{
+    display: flex;
+    img{
+      width: 45%;
+      height: 100%;
+      padding: 0 2.5%;
+    }
+  }
+  .project-text-img-split{
+    display: flex;
+    margin-top: 2rem;
+    p{
+      width: 50%;
+      padding-right: 2.5rem;
+    }
+    img{
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
+#dev-container{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
 }
 #home-container{
+  height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 21, 47, 0.58)), to(rgba(0, 0, 0, 0.9))), url('/assets/ak.jpg');
   background-image: linear-gradient(rgba(26, 21, 47, 0.58), rgba(0, 0, 0, 0.9)), url('/assets/ak.jpg');   
   background-repeat: no-repeat;
   background-size: cover;
 
-  
-  // background: #7474BF;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   header{
-    
     h1{
-      font-size: 3rem;
+      font-size: 2.3rem;
       color: #c1c1c1;
       padding: 0;
       text-decoration: underline;
       text-decoration-color: #113ee0;
+      font-family: 'Montserrat', 'Avenir Next', sans-serif;
+      margin: 0;
       #header-underline{
         color: rgb(226, 226, 226);
+        font-size: 2.5rem;
         }
       }
     h2{
-      color: #868686;
+      color: #ffd088;
+      font-family: 'Arvo', serif;
+      font-size: 1.6rem;
+      padding-top:1.5rem;
     }
   }
   #home-features{
@@ -76,13 +128,15 @@ body{
     position: relative;
     // left: 1rem;
     #skills-container{
+      padding-top: 5%;
       h1{
         position: relative;
-        top: 25px;
+        top: 22%;
         font-size: 4rem;
-        color: rgba(130, 125, 59, 0.2);
+        color: rgba(130, 125, 59, 0.24);
         font-weight: 800;
         left: 0rem;
+        margin: 0;
       }
       #skills-list-container{
         display: flex;
@@ -90,7 +144,7 @@ body{
         top: -2rem;
         left: 1rem;
         div{
-          width: 20%;
+          width: 25%;
           padding-top: 2rem;
           h2{
             text-decoration: underline;
@@ -101,29 +155,30 @@ body{
             list-style: none;
             padding: 0;
             li{
-              font-size: 1.5rem;
-              padding: 0.5rem 0;
+              font-size: 1.2rem;
+              font-family: 'Arvo';
+              padding: 0.2rem 0;
               color: white;
             }
           }
         }
-        #home-cta{
-          padding-left: 1rem;
-          button{
-            width: 100%;
-            height: 25%;
-            background-color: transparent;
-            border: 3px solid #f7e7ab;
-            color: #f7e7ab;
-          }
-          button:hover{
-            width: 100%;
-            height: 25%;
-            background-color: transparent;
-            border: 3px solid #f7e7ab;
-            color: #f7e7ab;
-          }
-        }
+        // #home-cta{
+        //   padding-left: 1rem;
+        //   button{
+        //     width: 100%;
+        //     height: 25%;
+        //     background-color: transparent;
+        //     border: 3px solid #f7e7ab;
+        //     color: #f7e7ab;
+        //   }
+        //   button:hover{
+        //     width: 100%;
+        //     height: 25%;
+        //     background-color: transparent;
+        //     border: 3px solid #f7e7ab;
+        //     color: #f7e7ab;
+        //   }
+        // }
       }
     }
   }

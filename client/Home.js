@@ -46,17 +46,11 @@ export default class Home extends Component {
                   <li>Information Architecture</li> 
                 </ul>
               </div>
-              <div id="home-cta">
+              {/* <div id="home-cta">
                 <button>hire Tony</button>
-              </div>
+              </div> */}
             </div>
-            
-        
           </div>
-          {/* <div>
-            <h2>Education</h2>
-            <p>ask jdflkasd fklhas kdfjh aksdjhfk; ashjdfakshdf ashjdf asjhdf;a sdfh;a sd</p>
-          </div> */}
           
         </div>
       </div>
