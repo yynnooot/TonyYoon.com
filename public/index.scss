@@ -42,7 +42,7 @@ body{
   
   // height: 100vh;
   .project-container{
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
   }
   .project-header{
     h2{
@@ -54,17 +54,11 @@ body{
     p{
 
     }
-  }
-  .practice{
-    display: flex;
-    #left{
-      width: 50%
-    }
-    #right{
-      width: 50%;
-      flex-direction: column;
+    img{
+      width: 100%;
     }
   }
+  
   .project-double-img{
     display: flex;
     img{
@@ -94,6 +88,18 @@ body{
     margin-bottom: 1.5rem;
   }
 }
+#ux-container{
+  color: black;
+  h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  #huddle-img{
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 10%;
+  }
+}
 #home-container{
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 21, 47, 0.58)), to(rgba(0, 0, 0, 0.9))), url('/assets/ak.jpg');
@@ -104,12 +110,13 @@ body{
   header{
     h1{
       font-size: 2.3rem;
-      color: #c1c1c1;
+      color: #e6e6e6;
       padding: 0;
       text-decoration: underline;
       text-decoration-color: #113ee0;
       font-family: 'Montserrat', 'Avenir Next', sans-serif;
       margin: 0;
+      
       #header-underline{
         color: rgb(226, 226, 226);
         font-size: 2.5rem;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import * as Scroll from 'react-scroll';
+import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 export default class Navbar extends Component {
@@ -26,11 +27,11 @@ export default class Navbar extends Component {
             
               <img id="nav-logo" src="assets/tonyLogo.png" />
               <ul id="nav-links">
-                <Link to="/"><li>home</li></Link>
-                <Link to="/dev"><li>dev</li></Link>
-                <Link to="/ux"><li>ux</li></Link>
-                <Link to="/misc"><li>misc</li></Link>
-                <Link to="/contact"><li>contact</li></Link>
+                <li><Link to="home-container" spy={true} smooth={true} duration={500} >home</Link></li>
+                <li><Link to="dev-container" spy={true} smooth={true} duration={500}>dev</Link></li>
+                <li><Link to="ux-container" spy={true} smooth={true} duration={500}>ux</Link></li>
+                <li><Link to="misc-container" spy={true} smooth={true} duration={500}>misc</Link></li>
+                <li><Link to="contact-container" spy={true} smooth={true} duration={500}>contact</Link></li>
                 
               </ul>
               <div>

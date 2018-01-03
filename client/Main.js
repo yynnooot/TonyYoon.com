@@ -1,6 +1,13 @@
 import React, {Component} from 'react'
-import Navbar from './Navbar'
-import Routes from './Routes'
+import Navbar from './Navbar';
+import Home from './Home';
+import Dev from './Dev';
+import Ux from './Ux';
+import Misc from './Misc';
+import Contact from './Contact'
+
+
+// import Routes from './Routes'
 
 
 
@@ -11,7 +18,14 @@ export default class Main extends Component {
     return (
       <div id="whole-view">
           <Navbar />
-          <Routes />
+          <div>
+            <Home />
+            <Dev />
+            <Ux />
+            <Misc />
+            <Contact />
+          </div>
+          {/* <Routes /> */}
       </div>
     )
   }

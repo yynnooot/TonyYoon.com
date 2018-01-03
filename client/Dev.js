@@ -19,10 +19,6 @@ export default class Dev extends Component {
   We built CodeCombat, an application where developers can improve their coding skills through solo training challenges, or live coding battles - where Users of similar rank go head-to-head and battle for points and rank. 
   </p>
             <img src="/assets/codecombat-landing.png" alt="codecombat-homepage"/>
-          {/* <div className="project-double-img">
-            <img src="/assets/codecombat2.png" alt="codecombat-editor"/>
-            <img src="/assets/codecombat3.png" alt="codecombat-editor2"/>
-          </div> */}
           </div>
           <div className="project-text-img-split">
             <p>I was project manager and led UI Development. We used React.js and SCSS for our view, Redux for our controller, and PostgreSQL for our models. We used Ace Editor for Users to type their code, and sent the code through Sockets.io to our backend VM2 sandbox environment to safely run user submitted code.
