@@ -100,6 +100,22 @@ body{
     margin-left: 10%;
   }
 }
+#misc-container{
+  h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  #illustration-div{
+    display:flex;
+    .misc-column{
+      width: 33%;
+      .column-item{
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+  }
+}
 #home-container{
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 21, 47, 0.58)), to(rgba(0, 0, 0, 0.9))), url('/assets/ak.jpg');
