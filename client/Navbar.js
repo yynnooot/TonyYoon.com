@@ -34,9 +34,13 @@ export default class Navbar extends Component {
                 <li><Link to="contact-container" spy={true} smooth={true} duration={500}>contact</Link></li>
                 
               </ul>
-              <div>
-                <i></i>
-                <i></i>
+              <div id="nav-icons">
+                <div>
+                  <img src="assets/icon-git.png" alt=""/>
+                </div>
+                <div>
+                  <img src="assets/icon-linkedin.png" alt=""/>
+                </div>
               </div>
         </nav>  
       )

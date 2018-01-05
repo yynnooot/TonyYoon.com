@@ -30,6 +30,19 @@ body{
       padding-top: 1rem;
       color: white;
       font-size: 1.1rem;
+      cursor: pointer;
+    }
+  }
+  #nav-icons{
+    display: flex;
+    div{
+      background-color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      img{
+        margin: 2.5px;
+      }
     }
   }
 }
@@ -48,8 +61,9 @@ body{
     h2{
       color: #ffd088;
       font-family: 'Arvo', serif;
-      text-decoration: underline;
-      text-decoration-color: #f16029;
+      border-bottom: 1px solid #f16029;
+      width: 30%;
+      padding-bottom: 0.5rem;
     }
     p{
 
@@ -89,7 +103,13 @@ body{
   }
 }
 #ux-container{
-  color: black;
+  color: rgb(235, 235, 235);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 21, 47, 0.7)), to(rgba(0, 0, 0, 0.9))), url('/assets/postit.png');
+  background-image: linear-gradient(rgba(26, 21, 47, 0.7), rgba(0, 0, 0, 0.9)), url('/assets/postit.png');   
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
   h1{
     text-align: center;
     margin-bottom: 1.5rem;
@@ -118,18 +138,18 @@ body{
 }
 #home-container{
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 21, 47, 0.58)), to(rgba(0, 0, 0, 0.9))), url('/assets/ak.jpg');
-  background-image: linear-gradient(rgba(26, 21, 47, 0.58), rgba(0, 0, 0, 0.9)), url('/assets/ak.jpg');   
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 21, 47, 0.15)), to(rgba(0, 0, 0, 0.9))), url('/assets/ak.jpg');
+  background-image: linear-gradient(rgba(26, 21, 47, 0.15), rgba(0, 0, 0, 0.9)), url('/assets/ak.jpg');   
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-attachment: fixed;
   header{
     h1{
       font-size: 2.3rem;
       color: #e6e6e6;
       padding: 0;
       text-decoration: underline;
-      text-decoration-color: #113ee0;
+      text-decoration-color: #f16029;
       font-family: 'Montserrat', 'Avenir Next', sans-serif;
       margin: 0;
       
@@ -146,17 +166,14 @@ body{
     }
   }
   #home-features{
-    // padding-top: 5rem;
-    // display: flex;
     position: relative;
-    // left: 1rem;
     #skills-container{
       padding-top: 5%;
       h1{
         position: relative;
         top: 22%;
         font-size: 4rem;
-        color: rgba(130, 125, 59, 0.24);
+        color: rgba(130, 125, 59, 0.43);
         font-weight: 800;
         left: 0rem;
         margin: 0;
