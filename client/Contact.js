@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 
 export default class Contact extends Component {
   constructor(){
@@ -6,7 +7,21 @@ export default class Contact extends Component {
     this.state = {
 
     }
+    this.onSubmit = this.onSubmit.bind(this);
   }
+  onSubmit(e){
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const subject = e.target.subject.value;
+    const message = e.target.message.value;
+
+    axios.post('/', { name, email, subject, message})
+    .then((result) => {
+      console.log('after axios: result => ', result)
+    })
+  }
+
   render(){
     return(
       <div className="components" id="contact-container">
@@ -16,17 +31,20 @@ export default class Contact extends Component {
         </div>
         
       
-        <form method="POST">
-        <label htmlFor="name">Name</label>
-        <input type="text" name="name" />
+        <form onSubmit={(event)=> this.onSubmit(event)}>
+          <label>Name</label>
+          <input type="text" name="name" />
 
-        <label htmlFor="email">Email</label>
-        <input type="email" name="email" />
+          <label>Email</label>
+          <input type="email" name="email" />
 
-        <label htmlFor="message">Message</label>
-        <textarea name="message" rows="3"></textarea>
+          <label>Subject</label>
+          <input type="text" name="subject" />
 
-        <input type="submit" />
+          <label>Message</label>
+          <textarea name="message"></textarea>
+
+          <input type="submit"></input>
         </form>
 
 

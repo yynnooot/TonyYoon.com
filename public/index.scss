@@ -35,14 +35,9 @@ body{
   }
   #nav-icons{
     display: flex;
-    div{
+    img{
       background-color: white;
       border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      img{
-        margin: 2.5px;
-      }
     }
   }
 }

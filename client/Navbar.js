@@ -35,12 +35,8 @@ export default class Navbar extends Component {
                 
               </ul>
               <div id="nav-icons">
-                <div>
-                  <img src="assets/icon-git.png" alt=""/>
-                </div>
-                <div>
-                  <img src="assets/icon-linkedin.png" alt=""/>
-                </div>
+                <img src="assets/icon-git.png" alt=""/>
+                <img src="assets/icon-linkedin.png" alt=""/>
               </div>
         </nav>  
       )
