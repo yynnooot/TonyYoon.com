@@ -32,19 +32,23 @@ export default class Contact extends Component {
         
       
         <form onSubmit={(event)=> this.onSubmit(event)}>
-          <label>Name</label>
-          <input type="text" name="name" />
+          <div>
+            <label>Name:</label>
+            <input type="text" name="name" />
 
-          <label>Email</label>
-          <input type="email" name="email" />
+            <label>Email:</label>
+            <input type="email" name="email" />
+          </div>
+          <div>
+            <label>Subject:</label>
+            <input type="text" name="subject" />
+          </div>
+          <div>
+            <label>Message:</label>
+            <textarea name="message"></textarea>
+          </div>
 
-          <label>Subject</label>
-          <input type="text" name="subject" />
-
-          <label>Message</label>
-          <textarea name="message"></textarea>
-
-          <input type="submit"></input>
+          <input id="contact-submit-btn"type="submit"></input>
         </form>
 
 
