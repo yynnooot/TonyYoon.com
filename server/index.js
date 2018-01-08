@@ -34,7 +34,6 @@ app.post('/',(req,res)=>{
 })
 
 app.use('*',(req,res) => {
-  console.log(process.env.API_KEY)
     res.sendFile(path.join(__dirname, '..', 'public/index.html'))
   })
 

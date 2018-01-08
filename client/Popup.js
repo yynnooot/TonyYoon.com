@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Popup extends Component(){
+export default class Popup extends Component{
   constructor(){
     super();
     this.state = {
@@ -9,9 +9,9 @@ export default class Popup extends Component(){
   }
   render(){
     return(
-       <div className='popup-div' style={{zIndex:'10'}}>
+       <div className='popup-div component' style={{zIndex:'10'}}>
         <div className='popup-inner-div'>
-          <h1></h1>
+          <h1>HELLLLLLOOOOOOOOOO</h1>
           
        </div>
      </div>

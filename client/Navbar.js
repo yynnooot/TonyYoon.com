@@ -1,21 +1,28 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import * as Scroll from 'react-scroll';
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import Popup from './Popup.js';
 
 
 export default class Navbar extends Component {
   constructor(){
     super()
     this.state = { 
-      activeItem: 'HOME' 
+      activeItem: 'HOME',
+      showResume: false 
     }
-    this.handleItemClick = this.handleItemClick.bind(this)
+    this.handleItemClick = this.handleItemClick.bind(this);
+    this.toggleResume = this.toggleResume.bind(this);
   }
 
   handleItemClick (event, { name }){ 
     // const name = event.target.name;
     console.log("this is name: ", name)
     this.setState({ activeItem: name }) 
+  }
+
+  toggleResume(){
+    this.setState({showResume: !this.state.showResume})
   }
 
   render() {
@@ -38,8 +45,10 @@ export default class Navbar extends Component {
               <div id="nav-icons">
                 <a href="https://github.com/yynnooot" target="_blank"><img className="nav-icon" src="assets/icon-git.png" alt=""/></a>
                 <a href="https://www.linkedin.com/in/tonyyoon/" target="_blank"><img className="nav-icon" src="assets/icon-linkedin.png" alt=""/></a>
-                <a href=""><div className="nav-icon" id="cv" embed src="assets/Tony_Yoon_Resume.pdf" type="application/pdf">cv</div></a>
+                <a href="#" onClick={this.toggleResume}><div className="nav-icon" id="cv" type="application/pdf">cv</div></a>
               </div>
+
+              {this.state.showResume ? <Popup /> : null}
 
         </nav>  
       )
