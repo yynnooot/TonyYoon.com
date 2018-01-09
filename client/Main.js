@@ -7,9 +7,6 @@ import Misc from './Misc';
 import Contact from './Contact'
 
 
-// import Routes from './Routes'
-
-
 
 export default class Main extends Component {
   
@@ -25,7 +22,6 @@ export default class Main extends Component {
             <Misc />
             <Contact />
           </div>
-          {/* <Routes /> */}
       </div>
     )
   }
