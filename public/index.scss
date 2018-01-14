@@ -11,6 +11,9 @@ body{
   display: flex;
 }
 #nav{
+  .active{
+    border-bottom: 1px solid #f16029;
+  }
   position: fixed;
   width: 15%;
   height: 100vh;
@@ -97,10 +100,11 @@ body{
       width: 50%;
       padding-right: 2.5rem;
       p{
-
+        line-height: 2rem;
       }
       button{
         width: 50%;
+        margin-left:25%;
         padding: 1rem;
         font-size: 1.1rem;
       }
@@ -242,7 +246,7 @@ body{
   }
 }
 #home-container{
-  min-height: 85vh;
+  min-height: 90vh;
   background-color:white;
   // background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 21, 47, 0.15)), to(rgba(0, 0, 0, 0.9)));
   // // background-image: linear-gradient(rgba(26, 21, 47, 0.15), rgba(0, 0, 0, 0.9)), url('/assets/ak.jpg');   

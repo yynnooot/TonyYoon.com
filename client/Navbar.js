@@ -8,8 +8,6 @@ export default class Navbar extends Component {
   constructor(){
     super()
     this.state = { 
-      activeItem: 'HOME',
-      showResume: false 
     }
     // this.handleItemClick = this.handleItemClick.bind(this);
     // this.toggleResume = this.toggleResume.bind(this);
@@ -27,19 +25,20 @@ export default class Navbar extends Component {
 
   render() {
     const activeItem = this.state.activeItem
+  
 
     return (
    
         <nav id="nav">
-            
+
               <img id="nav-logo" src="assets/tonyLogo.png" />
 
               <ul id="nav-links">
-                <li><Link to="home-container" spy={true} smooth={true} duration={500} >home</Link></li>
-                <li><Link to="dev-container" spy={true} smooth={true} duration={500}>dev</Link></li>
-                <li><Link to="ux-container" spy={true} smooth={true} duration={500}>ux</Link></li>
-                <li><Link to="misc-container" spy={true} smooth={true} duration={500}>misc</Link></li>
-                <li><Link to="contact-container" spy={true} smooth={true} duration={500}>contact</Link></li>
+                <li><Link to="home-container" activeClass="active" spy={true} smooth={true} duration={500} >home</Link></li>
+                <li><Link to="dev-container" activeClass="active" spy={true} smooth={true} duration={500}>dev</Link></li>
+                <li><Link to="ux-container" activeClass="active" spy={true} smooth={true} duration={500}>ux</Link></li>
+                <li><Link to="misc-container" activeClass="active" spy={true} smooth={true} duration={500}>misc</Link></li>
+                <li><Link to="contact-container"  activeClass="active" spy={true} smooth={true} duration={500}>contact</Link></li>
               </ul>
 
               <div id="nav-icons">
