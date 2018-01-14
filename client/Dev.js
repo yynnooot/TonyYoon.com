@@ -10,7 +10,7 @@ export default class Dev extends Component {
   render(){
     return(
       <div className="components" id="dev-container">
-        <h1>Dev Projects</h1>
+        <h1>Dev Projects<span>.</span></h1>
 
         <div id="codecombat-container" className="project-container">
           <div className="project-header">
@@ -21,8 +21,11 @@ export default class Dev extends Component {
             <img src="/assets/codecombat-landing.png" alt="codecombat-homepage"/>
           </div>
           <div className="project-text-img-split">
-            <p>I was project manager and led UI Development. We used React.js and SCSS for our view, Redux for our controller, and PostgreSQL for our models. We used Ace Editor for Users to type their code, and sent the code through Sockets.io to our backend VM2 sandbox environment to safely run user submitted code.
+            <div className="split-left">
+              <p>I was project manager and led UI Development. We used React.js and SCSS for our view, Redux for our controller, and PostgreSQL for our models. We used Ace Editor for Users to type their code, and sent the code through Sockets.io to our backend VM2 sandbox environment to safely run user submitted code.
 </p>
+              <button>View Project</button>
+            </div>
             <img src="/assets/codecombat3.png" alt=""/>
           </div>
         </div>
@@ -34,8 +37,11 @@ export default class Dev extends Component {
             <img src="/assets/travelpedia-gug.png" alt="travelpedia-home"/>
           </div>
           <div className="project-text-img-split">
+          <div className="split-left">
             <p>Here I take an image and convert it into a base-64 string which is used to make an axios post request to Google. Google response is in JSON, and I parsed the object to extract the name of the landmark. After receiving name of the landmark, I query the Wikipedia API to get summary description of the landmark. </p>
-            <img src="/assets/travel-eiffel.png" alt=""/>
+            <button>View Project</button>
+          </div> 
+          <img src="/assets/travel-eiffel.png" alt=""/>
           </div>
         </div>
       </div>

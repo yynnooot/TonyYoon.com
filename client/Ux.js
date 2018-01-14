@@ -10,7 +10,7 @@ export default class Ux extends Component {
   render(){
     return(
       <div className="components" id="ux-container">
-        <h1>UX Projects</h1>
+        <h1>UX Projects<span>.</span></h1>
         <div id="uxprocess-container" className="project-container">
           <div className="project-header">
             <h2>My Process</h2>
@@ -25,7 +25,7 @@ export default class Ux extends Component {
             <div className="ux-img-container" id="huddle-img-container">
               <img id="huddle-img" src="/assets/huddle-page.png" alt="huddleinsights-wireframe"/>
               <div className="overlay"></div>
-              <button className="hover-btn"><a href="ux_huddleinsights" target="_blank">View Case Study</a></button>
+              <a href="ux_huddleinsights" target="_blank"><div class="ux-hero-button">View Case Study</div></a>
             </div>
 
           </div>
@@ -37,7 +37,7 @@ export default class Ux extends Component {
             <div className="ux-img-container" id="heartbeat-img-container">
               <img src="assets/ux-heartbeat.png" alt="my-ux-process"/>
               <div className="overlay"></div>
-              <button className="hover-btn"><a href="/ux_heartbeat" target="_blank">View Case Study</a></button>
+              <a href="/ux_heartbeat" target="_blank"><div class="ux-hero-button">View Case Study</div></a>
             </div>
           </div>
         </div>

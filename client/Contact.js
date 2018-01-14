@@ -26,32 +26,35 @@ export default class Contact extends Component {
     return(
       <div className="components" id="contact-container">
         <div id="contact-header">
-          <h1>Thanks For Visiting!</h1>
-          <img src="/assets/profile-pic.png" alt=""/>
+          <h1>Thanks For Visiting<span>!</span></h1>
+          <h3>Interested in working together? Message me and tell me about your team/project!</h3>
+          {/* <img src="/assets/profile-pic.png" alt=""/> */}
         </div>
         
-      
-        <form onSubmit={(event)=> this.onSubmit(event)}>
-          <div>
+
+        <form onSubmit={(event)=> this.onSubmit(event)} id="form">
+          <div className="form-line">
             <label>Name:</label>
-            <input type="text" name="name" />
-
+            <input type="text" name="name" required/>
+          </div>
+            
+          <div className="form-line">
             <label>Email:</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" required/>
           </div>
-          <div>
+            
+          <div className="form-line">
             <label>Subject:</label>
-            <input type="text" name="subject" />
+            <input type="text" name="subject" required/>
           </div>
-          <div>
+          
+          <div className="form-line">
             <label>Message:</label>
-            <textarea name="message"></textarea>
+            <textarea name="message" required></textarea>
           </div>
 
-          <input id="contact-submit-btn"type="submit"></input>
+          <input id="contact-submit-btn" type="submit"></input>
         </form>
-
-
       </div>
 
     )

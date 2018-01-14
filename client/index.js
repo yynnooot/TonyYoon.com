@@ -16,7 +16,6 @@ ReactDOM.render(
       <Route path="/tony_yoon_resume" component={Resume}/>
       <Route path="/ux_huddleinsights" component={HuddleInsights}/>
       <Route path="/ux_heartbeat" component={HeartBeat}/>
-
     </div>
   </BrowserRouter>,
   document.getElementById('app')
