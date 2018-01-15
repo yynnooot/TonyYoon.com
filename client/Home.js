@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-scroll';
 
 export default class Home extends Component {
   constructor(){
@@ -46,12 +47,9 @@ export default class Home extends Component {
                   <li>Information Architecture</li> 
                 </ul>
               </div>
-              {/* <div id="home-cta">
-                <button>hire Tony</button>
-              </div> */}
             </div>
           </div>
-          
+          <Link to="dev-container" smooth={true} duration={500} ><i className="down-arrow"></i></Link>
         </div>
       </div>
 

@@ -29,7 +29,7 @@ app.post('/',(req,res)=>{
   };
  
   mailgun.messages().send(data, function (error, body) {
-    console.log(body);
+    res.send(body)
   });
 })
 

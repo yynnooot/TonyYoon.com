@@ -9,17 +9,16 @@ export default class Misc extends Component {
         <div id="illustration-div">
           <div className="misc-column">
             <img className="column-item" src="/assets/misc-deer.jpg" alt=""/>
-            <img className="column-item" src="/assets/misc-rhino.jpg" alt=""/>
             <img className="column-item" src="/assets/misc-doge.jpg" alt=""/>
+           
           </div>
           <div className="misc-column">
-            <img className="column-item" src="/assets/misc-rhino.jpg" alt=""/>
-            <img className="column-item" src="/assets/misc-doge.jpg" alt=""/>
-            <img className="column-item" src="/assets/misc-deer.jpg" alt=""/>
+            <img className="column-item" src="/assets/misc-skullblock.jpg" alt=""/>
+            <img className="column-item" src="/assets/misc-skull.jpg" alt=""/>
+           
           </div>
           <div className="misc-column">
-            <img className="column-item" src="/assets/misc-deer.jpg" alt=""/>
-            <img className="column-item" src="/assets/misc-doge.jpg" alt=""/>
+            <img className="column-item" src="/assets/misc-bernie.jpg" alt=""/>
             <img className="column-item" src="/assets/misc-rhino.jpg" alt=""/>
           </div>
         </div>

@@ -25,7 +25,7 @@ export default class Ux extends Component {
             <div className="ux-img-container" id="huddle-img-container">
               <img id="huddle-img" src="/assets/huddle-page.png" alt="huddleinsights-wireframe"/>
               <div className="overlay"></div>
-              <a href="ux_huddleinsights" target="_blank"><div class="ux-hero-button">View Case Study</div></a>
+              <a href="ux_huddleinsights" target="_blank"><div className="ux-hero-button">View Case Study</div></a>
             </div>
 
           </div>
@@ -37,7 +37,7 @@ export default class Ux extends Component {
             <div className="ux-img-container" id="heartbeat-img-container">
               <img src="assets/ux-heartbeat.png" alt="my-ux-process"/>
               <div className="overlay"></div>
-              <a href="/ux_heartbeat" target="_blank"><div class="ux-hero-button">View Case Study</div></a>
+              <a href="/ux_heartbeat" target="_blank"><div className="ux-hero-button">View Case Study</div></a>
             </div>
           </div>
         </div>
