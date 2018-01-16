@@ -12,7 +12,7 @@ export default class Home extends Component {
     return(
       <div id="home-container" className="components">
         <header>
-          <h1>I am a New York City based <br/><span id="header-underline">Fullstack Developer &<br/>UX Designer</span></h1>
+          <h1>I am a New York City based <br/>Fullstack Developer &<br/>UX Designer</h1>
           <h2>I build products that solve problems, drive business, and engage users with intuitive & seamless interactions.</h2>
         </header>
         

@@ -1,6 +1,7 @@
 body{
   font-family: "Avenir Next";
   margin:0;
+  padding: 0;
   height: 100%;
   h1{margin:0};
   h2{margin:0};
@@ -60,11 +61,10 @@ body{
 }
 
 .components{
-  padding-top: 6rem;
+  padding-top: 5rem;
   margin-left: 15%;
   padding-left: 5rem;
   padding-right: 7rem;
-  
   .project-container{
     padding-bottom: 5rem;
   }
@@ -75,9 +75,6 @@ body{
       border-bottom: 1px solid #f16029;
       width: 30%;
       padding-bottom: 0.5rem;
-    }
-    p{
-
     }
     img{
       width: 100%;
@@ -111,6 +108,7 @@ body{
       }
       button:hover {
         background-color: grey;
+        border-color: grey;
       }
     }
     img{
@@ -137,7 +135,6 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
   h1{
     text-align: center;
     margin-bottom: 1.5rem;
@@ -148,9 +145,7 @@ body{
 }
 .ux-img-container{
   position: relative;
-  img{
-    
-  }
+ 
   .overlay {
     position: absolute;
     display: none;
@@ -176,7 +171,7 @@ body{
     color: white;
   }
   .ux-hero-button:hover {
-    background-color: orange;
+    background-color: rgb(255, 123, 0);
     border: 3px solid orange;
   }
 }
@@ -190,11 +185,15 @@ body{
   }
 }
 #misc-container{
+  
+  background-color: honeydew;
+  padding-bottom: 5%;
   h1{
     text-align: center;
-    margin-bottom: 1.5rem;                                                
+    margin-bottom: 1.5rem;
+    color: #320d57;                                                
     span{
-      color: rgb(151, 248, 95)
+      color: #ff56b0;
     }
   }
   #illustration-div{
@@ -205,7 +204,6 @@ body{
       .column-item{
         width: 100%;
         flex-direction: column;
-        
       }
     }
   }
@@ -214,8 +212,9 @@ body{
   background-image: url('/assets/airplane.png');
   background-size: 25%;
   background-repeat: no-repeat;
-  background-position: 73% 67%; 
+  background-position: 73% 75%; 
   height: 90vh;
+  background-color: #e5e5e6;
   h1{
     text-align: center;
     margin-bottom: 1.5rem;
@@ -227,6 +226,7 @@ body{
     text-align: center;
     margin-bottom: 3rem;
     font-weight: 500; 
+    color: #4f4f84;
   }
   #contact-sent{
     color: rgb(4, 197, 4)
@@ -238,15 +238,17 @@ body{
 
   input{
     width: 100%;
-    height: 1.2rem;
-    font-size: 1.1rem;
+    height: 1.8rem;
+    font-size: 1rem;
     margin-bottom: 1.1rem;
+    padding-left: 0.5rem;
   }
   textarea{
     width: 100%;
-    height: 5rem;
-    font-size: 1.1rem;
+    height: 6rem;
+    font-size: 1rem;
     margin-bottom: 1.1rem;
+    padding-left: 0.5rem;
   }
   #contact-submit-btn{
     width: 50%;
@@ -317,7 +319,7 @@ body{
         top: -2rem;
         left: 1rem;
         div{
-          width: 25%;
+          width: 30%;
           padding-top: 2rem;
           h2{
             color: #d8ecf3;
@@ -341,4 +343,84 @@ body{
   }
 }
 
+/*Big tablets to 1200 (widths smaller than row: 1140px*/
+
+@media screen and (max-width: 1200px) {
+ #nav{
+   background-color: red;
+ }
+ #home-container{
+    #home-features{
+      h1{font-size: 3rem;}
+      h2{font-size: 1.3rem}
+      li{
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        color: red;
+      }
+    }
+}
+}
+
+/*SMALL TO BIG TABLETS: from 768px to 1023px*/
+
+@media screen and (max-width: 1023px) {
+  #nav{
+    background-color: blue;
+    #nav-logo{
+      width: 70%;
+      margin-left: 15%;
+    }
+    #nav-links {
+      padding: 0;
+      li{
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  }
+  #home-container{
+    header {
+      h1{font-size: 2rem;}
+      h2{font-size: 1.5rem;}
+    }
+    #home-features{
+      #skills{
+        h1{font-size: 3rem;}
+        #skills-list-container {
+          div{
+            h2{
+              font-size: 1.2rem;
+              font-weight: 600;
+            }
+            ul{
+              li{
+                font-size: 1rem;
+                letter-spacing: 0.1rem;
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+/*PHONES TO SMALL TABLETS: from 481px to 767px*/
+
+@media screen and (max-width: 767px) {
+  #nav{
+    background-color: red;
+  }
+}
+
+
+/*Small phones: from 0 to 480px*/
+
+@media screen and (max-width: 480px) {
+  #nav{
+    background-color: green;
+  }
+}
 
