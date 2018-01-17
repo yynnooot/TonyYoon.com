@@ -6,6 +6,7 @@ body{
   h1{margin:0};
   h2{margin:0};
   h3{margin:0};
+  a{text-decoration: none};
 }
 #whole-view{
   display: flex;
@@ -102,7 +103,7 @@ body{
         width: 50%;
         margin-left:25%;
         padding: 1rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         background-color: transparent;
         color: white;
       }
@@ -349,29 +350,28 @@ body{
  #nav{
    background-color: red;
  }
-
   #skills-container h1{
-    font-size: 3rem !important
+    font-size: 3rem
   }
   #skills-list-container{
     h2{font-size: 1.3rem}
     li{
-      font-size: 1rem !important;
-      letter-spacing: 0.1rem !important;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
     }
   }
   .split-left p {
-    line-height: 1.3rem !important;
-    font-weight: 100 !important;
-    letter-spacing: 0.1rem !important;
-    margin-top: 0 !important;
-    font-size: 0.9rem !important;
+    line-height: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    margin-top: 0;
+    font-size: 0.9rem;
   }
 }
 
 /*SMALL TO BIG TABLETS: from 768px to 1023px*/
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px){
   #nav{
     background-color: blue;
     #nav-logo{
@@ -386,13 +386,16 @@ body{
       }
     }
   }
+  .components{
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 5rem;
+  }
   #home-container{
-    header {
-      h1{font-size: 2rem;}
-      h2{font-size: 1.5rem;}
-    }
+    #home-header-h1{font-size: 2rem}
+    #home-header-h2{font-size: 1.5rem}
     #home-features{
-      #skills{
+      #skills-container{
         h1{font-size: 3rem;}
         #skills-list-container {
           div{
@@ -411,16 +414,55 @@ body{
       }
     }
   }
+  .split-left p {
+    line-height: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 0.05rem;
+    margin-top: 0;
+    font-size: 0.8rem;
+  }
+  #contact-container h2 {font-size: 1.2rem;}
+  #form input {
+    height: 1.5rem;
+    font-size: 0.9rem;
+    #contact-submit-btn{
+      height: 2rem;
+    }
+  }
+  #form textarea {
+    font-size: 0.9rem;
+  }
+  
 }
 
 /*PHONES TO SMALL TABLETS: from 481px to 767px*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
   #nav{
     background-color: red;
+    #nav-links {
+      padding: 0;
+      li{
+        font-size: 0.9rem;
+      }
+    }
+  }
+  #nav-icons{
+    flex-direction: column;
+    margin: 5rem 0 0 calc(50% - 12.5px) !important;
+  }
+  .components{
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  #home-header-h1{font-size: 1.5rem}
+  #home-header-h2{font-size: 1.2rem}
+  #myskills-h1{font-size: 2rem}
+  .project-text-img-split{
+    display: block;
   }
 }
-
 
 /*Small phones: from 0 to 480px*/
 
@@ -429,4 +471,3 @@ body{
     background-color: green;
   }
 }
-

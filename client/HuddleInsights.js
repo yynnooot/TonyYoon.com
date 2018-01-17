@@ -7,7 +7,7 @@ export default class HuddleInsights extends Component {
       height: '100vh'
     };
     return (
-      <div id="resume-container">
+      <div className="resume-container">
         <embed style={style} src="assets/uxhuddle.pdf#zoom=75" type="application/pdf"/>
       </div>
     )

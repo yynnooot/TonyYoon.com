@@ -39,7 +39,7 @@ export default class Dev extends Component {
           <div className="project-text-img-split">
           <div className="split-left">
             <p>Here I take an image and convert it into a base-64 string which is used to make an axios post request to Google. Google response is in JSON, and I parsed the object to extract the name of the landmark. After receiving name of the landmark, I query the Wikipedia API to get summary description of the landmark. </p>
-            <a href="https://github.com/yynnooot/Travelpedia" target="_blank"><button>View Git Repo</button></a>
+            <a href="https://github.com/yynnooot/Travelpedia" target="_blank"><button>View Code</button></a>
           </div> 
           <img src="/assets/travel-eiffel.png" alt=""/>
           </div>
