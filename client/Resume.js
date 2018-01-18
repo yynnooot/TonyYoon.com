@@ -7,7 +7,7 @@ export default class Resume extends Component {
       height: '100vh'
     };
     return (
-      <div id="resume-container">
+      <div className="resume-container">
         <embed style={style} src="assets/tony_yoon_resume.pdf#zoom=120" type="application/pdf"/>
       </div>
     )
