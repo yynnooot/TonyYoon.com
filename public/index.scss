@@ -62,62 +62,62 @@ body{
 }
 
 .components{
-  padding-top: 5rem;
+  padding: 5rem 7rem 0 5rem;
   margin-left: 15%;
-  padding-left: 5rem;
-  padding-right: 7rem;
-  .project-container{
-    padding-bottom: 5rem;
+}
+
+.project-container{
+  padding-bottom: 5rem;
+}
+.project-header{
+  h2{
+    color: #ffd088;
+    font-family: 'Arvo', serif;
+    border-bottom: 1px solid #f16029;
+    width: 30%;
+    padding-bottom: 0.5rem;
   }
-  .project-header{
-    h2{
-      color: #ffd088;
-      font-family: 'Arvo', serif;
-      border-bottom: 1px solid #f16029;
-      width: 30%;
-      padding-bottom: 0.5rem;
-    }
-    img{
-      width: 100%;
-    }
-  }
-  
-  .project-double-img{
-    display: flex;
-    img{
-      width: 45%;
-      height: 100%;
-      padding: 0 2.5%;
-    }
-  }
-  .project-text-img-split{
-    display: flex;
-    margin-top: 2rem;
-    .split-left{
-      width: 50%;
-      padding-right: 2.5rem;
-      p{
-        line-height: 2rem;
-      }
-      button{
-        width: 50%;
-        margin-left:25%;
-        padding: 1rem;
-        font-size: 1rem;
-        background-color: transparent;
-        color: white;
-      }
-      button:hover {
-        background-color: grey;
-        border-color: grey;
-      }
-    }
-    img{
-      width: 50%;
-      height: 100%;
-    }
+  img{
+    width: 100%;
   }
 }
+
+.project-double-img{
+  display: flex;
+  img{
+    width: 45%;
+    height: 100%;
+    padding: 0 2.5%;
+  }
+}
+.project-text-img-split{
+  display: flex;
+  margin-top: 2rem;
+  .split-left{
+    width: 50%;
+    padding-right: 2.5rem;
+    p{
+      line-height: 2rem;
+    }
+    button{
+      width: 50%;
+      margin-left:25%;
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: transparent;
+      color: white;
+    }
+    button:hover {
+      background-color: grey;
+      border-color: grey;
+    }
+  }
+  img{
+    width: 50%;
+    height: 100%;
+  }
+}
+
 #dev-container{
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
@@ -129,6 +129,7 @@ body{
     }
   }
 }
+
 #ux-container{
   color: rgb(235, 235, 235);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 21, 47, 0.7)), to(rgba(0, 0, 0, 0.9))), url('/assets/postit.png');
@@ -146,7 +147,9 @@ body{
 }
 .ux-img-container{
   position: relative;
- 
+  img{
+    width: 100%;
+  }
   .overlay {
     position: absolute;
     display: none;
@@ -185,6 +188,7 @@ body{
     opacity: 1;
   }
 }
+
 #misc-container{
   
   background-color: honeydew;
