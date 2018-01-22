@@ -1,0 +1,65 @@
+$sky: #3b61ec;
+
+#dev-container{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    span{
+      color: #5ea1fb;
+    }
+  }
+}
+
+.project-container{
+  padding-bottom: 5rem;
+}
+.project-header{
+  h2{
+    color: #ffd088;
+    font-family: 'Arvo', serif;
+    border-bottom: 1px solid $salmon;
+    width: 30%;
+    padding-bottom: 0.5rem;
+  }
+  img{
+    width: 100%;
+  }
+}
+.project-double-img{
+  display: flex;
+  img{
+    width: 45%;
+    height: 100%;
+    padding: 0 2.5%;
+  }
+}
+.project-text-img-split{
+  display: flex;
+      margin: 2rem 0;
+  .split-left{
+    width: 50%;
+    padding-right: 2.5rem;
+    p{
+      line-height: 2rem;
+    }
+  }
+  img{
+    width: 50%;
+    height: 100%;
+  }
+}
+button{
+  width: 30%;
+  margin-left:35%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+}
+button:hover {
+  background-color: $sky;
+  border-color: $sky;
+  cursor: pointer;
+}

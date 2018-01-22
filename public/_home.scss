@@ -1,0 +1,98 @@
+@-webkit-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade {
+  -webkit-animation: fade 3s; /* Safari 4+ */
+  -moz-animation:    fade 3s; /* Fx 5+ */
+  -o-animation:      fade 3s; /* Opera 12+ */
+  animation:         fade 3s; /* IE 10+, Fx 29+ */
+}
+#home-container{
+  min-height: 85vh;
+  background-color:white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 21, 47, 0.15)), to(rgba(0, 0, 0, 0.9)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('/assets/nyc-background.jpeg');   
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  header{
+    h1{
+      font-size: 2.8rem;
+      color: #e6e6e6;
+      padding: 0;
+      text-decoration: underline;
+      text-decoration-color: #f16029;
+      font-family: 'Montserrat', 'Avenir Next', sans-serif;
+      margin: 0;
+      }
+    h2{
+      color: #ffd088;
+      font-family: 'Avenir Next', serif;
+      font-size: 2rem;
+      font-weight: 200;
+      padding-top:1.5rem;
+    }
+  }
+  .down-arrow{
+    border: solid #efefef;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 50%;
+  }
+}
+ 
+#skills-container{
+  padding-top: 3%;
+  h1{
+    position: relative;
+    top: 22%;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.13);
+    font-weight: 800;
+    left: 0rem;
+    margin: 0;
+  }
+}
+.skills-list{
+  display: flex;
+  position: relative;
+  top: -2rem;
+  left: 1rem;
+}
+.homeskills{
+  width: 30%;
+  padding-top: 2rem;
+  h2{
+    color: #d8ecf3;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+    li{
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      font-weight: 200;
+      font-family: 'Avenir Next';
+      padding: 0.2rem 0;
+      color: white;
+    }
+  }
+} 

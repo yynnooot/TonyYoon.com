@@ -1,0 +1,24 @@
+
+#misc-container{
+  background-color: honeydew;
+  padding-bottom: 5%;
+  h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #320d57;                                                
+    span{
+      color: #ff56b0;
+    }
+  }
+}
+#illustration-div{
+  display:flex;
+  .misc-column{
+    width: 33%;
+    margin: 0 0.2rem;
+    .column-item{
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
