@@ -1,7 +1,7 @@
 import React from 'react';
 
-const UxProject = (props) => {
-  return (
+const UxProject = props => 
+ (
     <div className="project-container">
 
       <div className="project-header">
@@ -17,6 +17,6 @@ const UxProject = (props) => {
         
     </div>
   )
-}
+
 
 export default UxProject;

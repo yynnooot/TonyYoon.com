@@ -1,10 +1,10 @@
 import React from 'react';
 
-const HomeSkills = (props)=>{
-  return (
+const HomeSkills = props =>
+  (
     <div className="homeskills">
         <h2>{props.skills.title}</h2>
-        <ul>
+        <ul className="fade">
           {props.skills.list.map((item,index) => {
             return (
               <li key={index}>{item}</li>
@@ -13,6 +13,6 @@ const HomeSkills = (props)=>{
         </ul>
       </div>    
   )
-}
+
 
 export default HomeSkills;

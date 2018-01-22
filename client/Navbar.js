@@ -8,7 +8,9 @@ export default class Navbar extends Component {
   constructor(){
     super()
     this.state = { 
+      // toggleResume: false
     }
+
     // this.handleItemClick = this.handleItemClick.bind(this);
     // this.toggleResume = this.toggleResume.bind(this);
   }
@@ -30,6 +32,7 @@ export default class Navbar extends Component {
     return (
    
         <nav id="nav">
+              
 
               <img id="nav-logo" src="assets/tonyLogo.png" />
 
@@ -46,7 +49,7 @@ export default class Navbar extends Component {
                 <a href="https://www.linkedin.com/in/tonyyoon/" target="_blank"><img className="nav-icon" src="assets/icon-linkedin.png" alt=""/></a>
                 <a href="/tony_yoon_resume" target="_blank"><div className="nav-icon" id="cv">cv</div></a>
               </div>
-
+              {/* <button onClick={this.toggleResume}>toggle</button> */}
               {/* {this.state.showResume ? <Popup close={this.toggleResume}/> : null} */}
 
         </nav>  

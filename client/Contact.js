@@ -29,7 +29,7 @@ export default class Contact extends Component {
         <div id="contact-header">
           <h1>Thanks For Visiting<span>!</span></h1>
           {this.state.sent ? <h2 id="contact-sent">Message Successfully Sent!</h2> : <h2>Interested in working together? Tell me about your team/project!</h2>}
-          
+      
         </div>
         
           <form onSubmit={(event)=> this.onSubmit(event)} id="form">
@@ -53,7 +53,7 @@ export default class Contact extends Component {
               <textarea name="message" required></textarea>
             </div>
 
-            <input id="contact-submit-btn" type="submit"></input>
+            <input type="submit" value="Send"/>
           </form>
         
       </div>

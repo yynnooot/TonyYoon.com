@@ -1,3 +1,31 @@
+@import 'nav';
+
+$sky: #3b61ec;
+
+@-webkit-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade {
+  -webkit-animation: fade 3s; /* Safari 4+ */
+  -moz-animation:    fade 3s; /* Fx 5+ */
+  -o-animation:      fade 3s; /* Opera 12+ */
+  animation:         fade 3s; /* IE 10+, Fx 29+ */
+}
+
 body{
   font-family: "Avenir Next";
   margin:0;
@@ -10,55 +38,6 @@ body{
 }
 #whole-view{
   display: flex;
-}
-#nav{
-  .active{
-    border-bottom: 1px solid #f16029;
-  }
-  position: fixed;
-  width: 15%;
-  height: 100vh;
-  background-color: #0a1125;
-  #nav-logo {
-    text-align: center;
-    width: 50%;
-    padding-top: 5rem;
-    margin-left: 25%;
-  }
-  #nav-links{
-    color: white;
-    list-style: none;
-    padding-right: 3rem;
-    text-align: right;
-    li{
-      padding-top: 1rem;
-      color: white;
-      font-size: 1.1rem;
-      cursor: pointer;
-    }
-  }
-  #nav-icons{
-    display: flex;
-    margin: 0 auto;
-    width: 65%;
-    justify-content: space-evenly;
-    margin-top: 5rem;
-    .nav-icon{
-      margin: 0 1px;
-    }
-    img{
-      background-color: white;
-      border-radius: 50%;
-    }
-    #cv{
-      border-radius: 50%;
-      border: 0.5px solid white;
-      color: white;
-      width: 25px;
-      height: 25px;
-      text-align: center;
-    }
-  }
 }
 
 .components{
@@ -73,7 +52,7 @@ body{
   h2{
     color: #ffd088;
     font-family: 'Arvo', serif;
-    border-bottom: 1px solid #f16029;
+    border-bottom: 1px solid $salmon;
     width: 30%;
     padding-bottom: 0.5rem;
   }
@@ -92,30 +71,31 @@ body{
 }
 .project-text-img-split{
   display: flex;
-  margin-top: 2rem;
+      margin: 2rem 0;
   .split-left{
     width: 50%;
     padding-right: 2.5rem;
     p{
       line-height: 2rem;
     }
-    button{
-      width: 50%;
-      margin-left:25%;
-      padding: 1rem;
-      font-size: 1rem;
-      background-color: transparent;
-      color: white;
-    }
-    button:hover {
-      background-color: grey;
-      border-color: grey;
-    }
   }
   img{
     width: 50%;
     height: 100%;
   }
+}
+button{
+  width: 30%;
+  margin-left:35%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+}
+button:hover {
+  background-color: $sky;
+  border-color: $sky;
+  cursor: pointer;
 }
 
 #dev-container{
@@ -175,8 +155,8 @@ body{
     color: white;
   }
   .ux-hero-button:hover {
-    background-color: rgb(255, 123, 0);
-    border: 3px solid orange;
+    background-color: $salmon;
+    border: 3px solid $salmon;
   }
 }
 .ux-img-container:hover {
@@ -240,10 +220,22 @@ body{
 #form{
   width: 50%;
   margin: 0 25%;
-
-  input{
+  input[type=submit]{
+    -webkit-appearance: none;
+    width: 50%;
+    height: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #63ef68;
+    color: white;
+  }
+}
+.form-line{
+  input[type=text], input[type=email]{
     width: 100%;
-    height: 1.8rem;
+    line-height: 1.8rem;
     font-size: 1rem;
     margin-bottom: 1.1rem;
     padding-left: 0.5rem;
@@ -255,16 +247,9 @@ body{
     margin-bottom: 1.1rem;
     padding-left: 0.5rem;
   }
-  #contact-submit-btn{
-    width: 50%;
-    height: 3rem !important;
-    cursor: pointer;
-  }
-  #contact-submit-btn:hover {
-    background-color: #63ef68;
-    color: white;
-  }
 }
+
+
 #home-container{
   min-height: 85vh;
   background-color:white;
@@ -339,11 +324,7 @@ body{
       color: white;
     }
   }
-}
-
-
-  
-
+} 
 
 /*Big tablets to 1200 (widths smaller than row: 1140px*/
 
@@ -436,6 +417,7 @@ body{
     font-size: 0.9rem;
   }
   #contact-container h2 {font-size: 1.2rem;}
+
   #form input {
     height: 1.5rem;
     font-size: 0.9rem;
