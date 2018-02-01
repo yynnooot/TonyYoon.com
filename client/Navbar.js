@@ -32,9 +32,7 @@ export default class Navbar extends Component {
     return (
    
         <nav id="nav">
-              
-
-              <img id="nav-logo" src="assets/tonyLogo.png" />
+              <img className="nav-logo" src="assets/tonyLogo.png" />
 
               <ul id="nav-links">
                 <li><Link to="home-container" activeClass="active" spy={true} smooth={true} duration={500} >home</Link></li>
@@ -44,7 +42,7 @@ export default class Navbar extends Component {
                 <li><Link to="contact-container"  activeClass="active" spy={true} smooth={true} duration={500}>contact</Link></li>
               </ul>
 
-              <div id="nav-icons">
+              <div className="nav-icons">
                 <a href="https://github.com/yynnooot" target="_blank"><img className="nav-icon" src="assets/icon-git.png" alt=""/></a>
                 <a href="https://www.linkedin.com/in/tonyyoon/" target="_blank"><img className="nav-icon" src="assets/icon-linkedin.png" alt=""/></a>
                 <a href="/tony_yoon_resume" target="_blank"><div className="nav-icon" id="cv">cv</div></a>

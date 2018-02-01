@@ -1,11 +1,10 @@
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 @import 'nav';
 @import 'home';
 @import 'dev';
 @import 'ux';
 @import 'misc';
 @import 'contact';
-
-
 
 body{
   font-family: "Avenir Next";
@@ -23,6 +22,24 @@ body{
 .components{
   padding: 5rem 7rem 0 5rem;
   margin-left: 15%;
+}
+.project-container{
+  padding-bottom: 5rem;
+}
+.project-header{
+  h2{
+    color: #ffd088;
+    font-family: 'Arvo', serif;
+    border-bottom: 1px solid $salmon;
+    width: 30%;
+    padding-bottom: 0.5rem;
+  }
+  img{
+    width: 100%;
+  }
+}
+.nav-burger{
+  display: none;
 }
 
 /*Big tablets to 1200 (widths smaller than row: 1140px*/
@@ -53,9 +70,10 @@ body{
 /*SMALL TO BIG TABLETS: from 768px to 1023px*/
 
 @media screen and (max-width: 1023px){
+  //NAV
   #nav{
     background-color: blue;
-    #nav-logo{
+    .nav-logo{
       width: 70%;
       margin-left: 15%;
     }
@@ -67,56 +85,56 @@ body{
       }
     }
   }
-  .components{
-    padding-top: 4rem;
-    padding-left: 4rem;
-    padding-right: 5rem;
+  .project-container{
+    padding-bottom: 2.5rem;
   }
+  .components{
+    padding: 4rem 5rem 0 4rem;
+  }
+  //HOME
   #home-container{
     header{
       h1 {font-size: 2rem}
       h2 {font-size: 1.5rem}
     }
-    #home-features{
-      #skills-container{
-        h1{font-size: 3rem;}
-        #skills-list-container {
-          div{
-            h2{
-              font-size: 1.2rem;
-              font-weight: 600;
-            }
-            ul{
-              li{
-                font-size: 1rem;
-                letter-spacing: 0.1rem;
-              }
-            }
-          }
-        }
+  }
+  #skills-container{
+    h1{font-size: 3rem}
+  }
+  .homeskills{
+    h2{
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    ul{
+      li{
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
       }
     }
   }
-  .components .project-text-img-split .split-left {
-    p {
-      line-height: 1.3rem;
-      font-weight: 100;
-      letter-spacing: 0.05rem;
-      margin-top: 0;
-      font-size: 0.8rem;
-    }
-    button {
-      font-size: 0.8rem;
+  //DEV
+  .project-text-img-split {
+    margin: 2rem 0 1rem 0;
+    .split-left {
+      p {
+        line-height: 1.3rem;
+        font-weight: 100;
+        letter-spacing: 0.05rem;
+        margin-top: 0;
+        font-size: 0.8rem;
+      }
     }
   }
-  .project-container .project-header p{
+  .dev-btn {
+    font-size: 0.8rem;
+  }
+  .project-header p{
     font-size: 0.9rem;
   }
-  .ux-img-container .ux-hero-button {
-    font-size: 0.9rem;
-  }
+  
+  //CONTACT
   #contact-container h2 {font-size: 1.2rem;}
-
   #form input {
     height: 1.5rem;
     font-size: 0.9rem;
@@ -127,7 +145,6 @@ body{
   #form textarea {
     font-size: 0.9rem;
   }
-  
 }
 
 /*PHONES TO SMALL TABLETS: from 481px to 767px*/
@@ -154,20 +171,29 @@ body{
       h1{font-size: 1.6rem}
       h2{font-size: 1.5rem;}
     }
-    #home-features #skills-container #skills-list-container div{
-      h1{
-        font-size: 1rem;
-        font-weight: 500;
-      }
-      ul {
-        li{ 
-          font-size: 0.9rem;
-          letter-spacing: 0.1rem; 
-        }
+  }
+  #skills-container h1{
+      font-size: 2.5rem;
+    }
+  .homeskills{
+    h2{
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    ul {
+      li{ 
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem; 
       }
     }
   }
-  .components .project-text-img-split {
+  .project-header p{
+    line-height: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 0.05rem;
+    font-size: 0.8rem;
+  }
+  .project-text-img-split {
     display: block;
     .split-left{
       width: 100%;
@@ -178,7 +204,7 @@ body{
         margin-top: 0;
         font-size: 0.8rem;
       }
-      button {
+      .dev-btn {
         font-size: 0.8rem;
       }
     }
@@ -187,13 +213,107 @@ body{
       padding-top: 1rem;
     }
   }
+  #form input[type=submit]{
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
 }
  
-
 /*Small phones: from 0 to 480px*/
 
 @media screen and (max-width: 480px) {
-  #nav{
-    background-color: green;
+  .nav-burger{
+    display: block;
   }
+  #nav{
+    display: none;
+  }
+  #nav-links li {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .components{
+    padding: 3rem 2rem 0 2rem;
+    margin: 0;
+  }
+  .nav-logo{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 25%;
+  }
+  .nav-icons{
+    display: flex !important;
+  }
+  .dev-btn{
+    width: 35%;
+    padding: 0.8rem;
+  }
+  // .ux-img-container .ux-hero-button {
+  //   font-size: 0.8rem;
+  //   width: 33%;
+  //   padding: 0.7rem;
+  // }
+  .bm-burger-button {
+    position: fixed;
+    width: 2.3rem;
+    height: 2rem;
+    right: 2rem;
+    top: 2rem;
+  }
+  
+  .bm-burger-bars{
+    background: black;
+  }
+  .bm-menu-wrap{
+    width: 50% !important;
+    position: fixed;
+    right: inherit;
+    z-index: 1100;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  .bm-menu {
+    background: #1f3490;
+  }
+  .bm-cross{
+    background: white;
+    height: 20px !important;
+  }
+  .bm-cross-button{
+    right: 15%;
+    top: 4%;
+  }
+  #home-container {
+    padding-top: 5rem;
+  }
+
+  #home-container header h2 {
+    font-size: 1.1rem;
+  }
+  .skills-list{
+    left: 0.5rem;
+  }
+  #skills-container h1 {
+    font-size: 2rem;
+  }
+  .homeskills{
+    width: 33%;
+    h2{
+      font-weight: 500;
+    }
+  }
+  .homeskills ul li{
+    font-size: 0.8rem;
+  }
+  #misc-container{
+    padding: 3rem 0;
+  }
+  #illustration-div .misc-column {
+    margin: 0 0.1rem;
+  }
+  #form{
+    margin: 0 17.5%;
+    width: 65%;
+  }
+
 }

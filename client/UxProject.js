@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageGallery from 'react-image-gallery';
 
 const UxProject = props => 
  (
@@ -8,15 +9,12 @@ const UxProject = props =>
         <h2>{props.project.title}</h2>
         <p>{props.project.description}</p>
       </div>
-
-      <div className="ux-img-container">
-        <img src={props.project.image} alt={props.project.title}/>
-        <div className="overlay"></div>
-        <a href={props.project.route} target="_blank"><div className="ux-hero-button">View Case Study</div></a>
+      <div>
+        <ImageGallery items={props.project.images}/>
       </div>
+      
         
     </div>
   )
-
 
 export default UxProject;
