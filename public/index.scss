@@ -24,8 +24,9 @@ body{
   margin-left: 15%;
 }
 .project-container{
-  padding-bottom: 5rem;
+  padding-bottom: 5rem; 
 }
+.image-gallery{max-width: 100%;}
 .project-header{
   h2{
     color: #ffd088;
@@ -38,6 +39,7 @@ body{
     width: 100%;
   }
 }
+
 .nav-burger{
   display: none;
 }
@@ -58,12 +60,16 @@ body{
       letter-spacing: 0.1rem;
     }
   }
-  .split-left p {
-    line-height: 1.3rem;
-    font-weight: 100;
-    letter-spacing: 0.1rem;
-    margin-top: 0;
-    font-size: 0.9rem;
+  .project-text-img-split{
+    .split-left{
+      p{
+        line-height: 1.3rem;
+        font-weight: 100;
+        letter-spacing: 0.1rem;
+        margin-top: 0;
+        font-size: 0.9rem;
+      }
+    }
   }
 }
 
@@ -77,12 +83,12 @@ body{
       width: 70%;
       margin-left: 15%;
     }
-    #nav-links {
-      padding: 0;
-      li{
-        font-size: 1rem;
-        text-align: center;
-      }
+  }
+  #nav-links {
+    padding: 0;
+    li{
+      font-size: 1rem;
+      text-align: center;
     }
   }
   .project-container{
@@ -204,14 +210,14 @@ body{
         margin-top: 0;
         font-size: 0.8rem;
       }
-      .dev-btn {
-        font-size: 0.8rem;
-      }
     }
     img{
       width: 100%;
       padding-top: 1rem;
     }
+  }
+  .dev-btn {
+    font-size: 0.8rem;
   }
   #form input[type=submit]{
     height: 2.5rem;
@@ -248,11 +254,7 @@ body{
     width: 35%;
     padding: 0.8rem;
   }
-  // .ux-img-container .ux-hero-button {
-  //   font-size: 0.8rem;
-  //   width: 33%;
-  //   padding: 0.7rem;
-  // }
+ 
   .bm-burger-button {
     position: fixed;
     width: 2.3rem;

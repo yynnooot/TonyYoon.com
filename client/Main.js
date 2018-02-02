@@ -17,7 +17,7 @@ export default class Main extends Component {
       <div id="whole-view">
           <Navbar />
           <NavBurger/>
-          <div>
+          <div id="right-view">
             <Home />
             <Dev />
             <Ux />
