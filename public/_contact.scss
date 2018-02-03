@@ -6,6 +6,9 @@
   padding-bottom: 8%;
   background-color: #e5e5e6;
   height: 100vh;
+  @media (max-width: 480px){
+    padding-bottom: 0;
+  }
   h1{
     text-align: center;
     margin-bottom: 1.5rem;
@@ -18,6 +21,9 @@
     margin-bottom: 3rem;
     font-weight: 500; 
     color: #4f4f84;
+    @media (max-width: 1023px){
+      font-size: 1.2rem;
+    }
   }
   #contact-sent{
     color: rgb(4, 197, 4)
@@ -26,12 +32,26 @@
 #form{
   width: 50%;
   margin: 0 25%;
+  @media (max-width: 480px){
+    margin: 0 17.5%;
+    width: 65%;
+  }
+  input{
+    @media (max-width: 1023px){
+      height: 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
   input[type=submit]{
     -webkit-appearance: none;
     width: 50%;
     height: 3rem;
     font-size: 1rem;
     cursor: pointer;
+    @media (max-width: 767px){
+      height: 2.5rem;
+      font-size: 0.9rem;
+    }
   }
   input[type=submit]:hover {
     background-color: #63ef68;
@@ -52,5 +72,8 @@
     font-size: 1rem;
     margin-bottom: 1.1rem;
     padding-left: 0.5rem;
+    @media (max-width: 1023px){
+      font-size: 0.9rem;
+    }
   }
 }

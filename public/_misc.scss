@@ -2,6 +2,9 @@
 #misc-container{
   background-color: honeydew;
   padding-bottom: 5%;
+  @media (max-width: 480px){
+    padding: 3rem 0;
+  }
   h1{
     text-align: center;
     margin-bottom: 1.5rem;
@@ -16,6 +19,9 @@
   .misc-column{
     width: 33%;
     margin: 0 0.2rem;
+    @media (max-width: 480px){
+      margin: 0 0.1rem;
+    }
     .column-item{
       width: 100%;
       flex-direction: column;
