@@ -12,7 +12,7 @@ export default class Home extends Component {
       back: {title: 'Back-End',
               list: ['Node', 'Express', 'PostgreSQL', 'Sequelize']
       },
-      ux: {title: 'User-Experience',
+      ux: {title: 'UX Design',
             list: ['Interaction Design', 'Wireframing', 'UX Research', 'Info. Architecture']
       }
     }

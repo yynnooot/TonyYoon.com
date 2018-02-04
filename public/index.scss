@@ -1,11 +1,10 @@
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 @import 'nav';
 @import 'home';
 @import 'dev';
 @import 'ux';
 @import 'misc';
 @import 'contact';
-
-
 
 body{
   font-family: "Avenir Next";
@@ -20,180 +19,127 @@ body{
 #whole-view{
   display: flex;
 }
+#right-view{
+  width: 85%;
+  margin-left: 15%;
+}
 .components{
   padding: 5rem 7rem 0 5rem;
-  margin-left: 15%;
+}
+.project-container{
+  padding-bottom: 5rem; 
+}
+.image-gallery{
+  max-width: 100%;
+  background: #000;
+}
+.image-gallery-content.fullscreen {
+  width: 80%;
+  margin: 0 auto;
+}
+.image-gallery-left-nav, .image-gallery-right-nav {
+  font-size: 3em;
+}
+.project-header{
+  h2{
+    color: #ffd088;
+    font-family: 'Arvo', serif;
+    border-bottom: 1px solid $salmon;
+    width: 30%;
+    padding-bottom: 0.5rem;
+  }
+  img{
+    width: 100%;
+  }
+}
+.nav-burger{
+  display: none;
 }
 
 /*Big tablets to 1200 (widths smaller than row: 1140px*/
 
-@media screen and (max-width: 1200px) {
-  #nav{
-    background-color: red;
-  }
-  #skills-container h1{
-    font-size: 3rem
-  }
-  #skills-list-container{
-    h2{font-size: 1.3rem}
-    li{
-      font-size: 1rem;
-      letter-spacing: 0.1rem;
-    }
-  }
-  .split-left p {
-    line-height: 1.3rem;
-    font-weight: 100;
-    letter-spacing: 0.1rem;
-    margin-top: 0;
-    font-size: 0.9rem;
+@media (max-width: 1200px) {
+  .components{
+    padding: 5rem 5rem 0 4rem;
   }
 }
 
 /*SMALL TO BIG TABLETS: from 768px to 1023px*/
 
-@media screen and (max-width: 1023px){
-  #nav{
-    background-color: blue;
-    #nav-logo{
-      width: 70%;
-      margin-left: 15%;
-    }
-    #nav-links {
-      padding: 0;
-      li{
-        font-size: 1rem;
-        text-align: center;
-      }
-    }
+@media (max-width: 1023px){
+  .project-container{
+    padding-bottom: 2.5rem;
+  }
+  .project-header p{
+    font-size: 0.9rem;
   }
   .components{
-    padding-top: 4rem;
-    padding-left: 4rem;
-    padding-right: 5rem;
-  }
-  #home-container{
-    header{
-      h1 {font-size: 2rem}
-      h2 {font-size: 1.5rem}
-    }
-    #home-features{
-      #skills-container{
-        h1{font-size: 3rem;}
-        #skills-list-container {
-          div{
-            h2{
-              font-size: 1.2rem;
-              font-weight: 600;
-            }
-            ul{
-              li{
-                font-size: 1rem;
-                letter-spacing: 0.1rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .components .project-text-img-split .split-left {
-    p {
-      line-height: 1.3rem;
-      font-weight: 100;
-      letter-spacing: 0.05rem;
-      margin-top: 0;
-      font-size: 0.8rem;
-    }
-    button {
-      font-size: 0.8rem;
-    }
-  }
-  .project-container .project-header p{
-    font-size: 0.9rem;
-  }
-  .ux-img-container .ux-hero-button {
-    font-size: 0.9rem;
-  }
-  #contact-container h2 {font-size: 1.2rem;}
-
-  #form input {
-    height: 1.5rem;
-    font-size: 0.9rem;
-    #contact-submit-btn{
-      height: 2rem;
-    }
-  }
-  #form textarea {
-    font-size: 0.9rem;
+    padding: 4rem 5rem 0 4rem;
   }
   
 }
 
 /*PHONES TO SMALL TABLETS: from 481px to 767px*/
 
-@media screen and (max-width: 767px){
-  #nav{
-    background-color: red;
-    #nav-links {
-      padding: 0;
-      li{
-        font-size: 0.9rem;
-      }
-    }
-  }
-  #nav-icons{
-    flex-direction: column;
-    margin: 5rem 0 0 calc(50% - 12.5px) !important;
-  }
+@media (max-width: 767px){
   .components{
     padding: 3rem 3rem 0 3rem;
   }
-  #home-container {
-    header{
-      h1{font-size: 1.6rem}
-      h2{font-size: 1.5rem;}
-    }
-    #home-features #skills-container #skills-list-container div{
-      h1{
-        font-size: 1rem;
-        font-weight: 500;
-      }
-      ul {
-        li{ 
-          font-size: 0.9rem;
-          letter-spacing: 0.1rem; 
-        }
-      }
-    }
-  }
-  .components .project-text-img-split {
-    display: block;
-    .split-left{
-      width: 100%;
-      p {
-        line-height: 1.3rem;
-        font-weight: 100;
-        letter-spacing: 0.05rem;
-        margin-top: 0;
-        font-size: 0.8rem;
-      }
-      button {
-        font-size: 0.8rem;
-      }
-    }
-    img{
-      width: 100%;
-      padding-top: 1rem;
-    }
+  .project-header p{
+    line-height: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 0.05rem;
+    font-size: 0.8rem;
   }
 }
  
-
 /*Small phones: from 0 to 480px*/
 
-@media screen and (max-width: 480px) {
-  #nav{
-    background-color: green;
+@media (max-width: 480px) {
+  .nav-burger{
+    display: block;
+  }
+  .bm-burger-button {
+    position: fixed;
+    width: 2.3rem;
+    height: 2rem;
+    right: 2rem;
+    top: 2rem;
+  }
+  
+  .bm-burger-bars{
+    background: black;
+  }
+  .bm-menu-wrap{
+    width: 50% !important;
+    position: fixed;
+    right: inherit;
+    z-index: 1100;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  .bm-menu {
+    background: #11193e;
+  }
+  .bm-cross{
+    background: white;
+    height: 20px !important;
+  }
+  .bm-cross-button{
+    right: 2.3rem !important;
+    top: 2rem !important;
+  }
+
+  #right-view{
+    width: 100%;
+    margin: 0;
+  }
+
+  .components{
+    padding: 3rem 2rem 0 2rem;
+  }
+  
+  .image-gallery-left-nav, .image-gallery-right-nav {
+    font-size: 2em;
   }
 }

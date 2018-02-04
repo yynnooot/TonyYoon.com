@@ -29,6 +29,9 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  @media (max-width: 480px){
+    padding-top: 5rem;
+  }
   header{
     h1{
       font-size: 2.8rem;
@@ -38,13 +41,29 @@
       text-decoration-color: #f16029;
       font-family: 'Montserrat', 'Avenir Next', sans-serif;
       margin: 0;
+      @media (max-width: 1023px){
+        font-size: 2rem
       }
+      @media (max-width: 767px){
+        font-size: 1.6rem;
+      }
+    }
+      
     h2{
       color: #ffd088;
       font-family: 'Avenir Next', serif;
       font-size: 2rem;
       font-weight: 200;
       padding-top:1.5rem;
+      @media (max-width: 1023px){
+        font-size: 1.5rem
+      }
+      @media (max-width: 767px){
+        font-size: 1.5rem;
+      }
+      @media (max-width: 480px){
+        font-size: 1.1rem;
+      }
     }
   }
   .down-arrow{
@@ -68,6 +87,15 @@
     font-weight: 800;
     left: 0rem;
     margin: 0;
+    @media (max-width: 1200px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 767px){
+      font-size: 2.5rem;
+    }
+    @media (max-width: 480px){
+      font-size: 2rem;
+    }
   }
 }
 .skills-list{
@@ -75,12 +103,29 @@
   position: relative;
   top: -2rem;
   left: 1rem;
+  @media (max-width: 480px){
+    left: 0.5rem;
+  }
 }
 .homeskills{
   width: 30%;
   padding-top: 2rem;
+  @media (max-width: 480px){
+    width: 33%;
+  }
   h2{
     color: #d8ecf3;
+    @media (max-width: 1200px) {
+      font-size: 1.3rem
+    }
+    @media (max-width: 767px){
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    @media (max-width: 1023px){
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
   }
   ul{
     list-style: none;
@@ -93,6 +138,17 @@
       font-family: 'Avenir Next';
       padding: 0.2rem 0;
       color: white;
+      @media (max-width: 1200px){
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+      }
+      @media (max-width: 767px){
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem; 
+      }
+      @media (max-width: 480px){
+        font-size: 0.8rem;
+      }
     }
   }
 } 

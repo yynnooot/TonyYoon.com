@@ -12,53 +12,64 @@ $sky: #3b61ec;
   }
 }
 
-.project-container{
-  padding-bottom: 5rem;
-}
-.project-header{
-  h2{
-    color: #ffd088;
-    font-family: 'Arvo', serif;
-    border-bottom: 1px solid $salmon;
-    width: 30%;
-    padding-bottom: 0.5rem;
-  }
-  img{
-    width: 100%;
-  }
-}
-.project-double-img{
-  display: flex;
-  img{
-    width: 45%;
-    height: 100%;
-    padding: 0 2.5%;
-  }
-}
 .project-text-img-split{
   display: flex;
-      margin: 2rem 0;
+  margin: 2rem 0;
+  @media (max-width: 1023px){
+    margin: 2rem 0 1rem 0;
+  }
+  @media (max-width: 767px){
+    display: block;
+  }
   .split-left{
     width: 50%;
     padding-right: 2.5rem;
+    @media (max-width: 767px){
+      width: 100%;
+    }
     p{
       line-height: 2rem;
+      @media (max-width: 1200px){
+        line-height: 1.3rem;
+        font-weight: 100;
+        letter-spacing: 0.1rem;
+        margin-top: 0;
+        font-size: 0.9rem;
+      }
+      @media (max-width: 1023px){
+        font-size: 0.8rem;
+      }
+      @media (max-width: 767px){
+        letter-spacing: 0.05rem;
+        
+      }
     }
   }
   img{
     width: 50%;
     height: 100%;
+    @media (max-width: 767px){
+      width: 100%;
+      padding-top: 1rem;
+    }
   }
 }
-button{
+.dev-btn{
   width: 30%;
   margin-left:35%;
   padding: 1rem;
   font-size: 1rem;
   background-color: transparent;
   color: white;
+  @media (max-width: 1023px){
+    font-size: 0.8rem;
+  }
+  @media (max-width: 480px){
+    width: 35%;
+    padding: 0.8rem;
+  }
 }
-button:hover {
+.dev-btn:hover {
   background-color: $sky;
   border-color: $sky;
   cursor: pointer;
