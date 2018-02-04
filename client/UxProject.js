@@ -16,8 +16,4 @@ const UxProject = props =>
   )
 
 export default UxProject;
-//  {/* <div className="slide-container">
-//         {/* <ImageGallery items={props.project.images}/> */}
-        
-//       </div> */}
       

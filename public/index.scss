@@ -59,53 +59,14 @@ body{
 /*Big tablets to 1200 (widths smaller than row: 1140px*/
 
 @media (max-width: 1200px) {
-  #nav{
-    background-color: red;
-  }
-  // #skills-container h1{
-  //   font-size: 3rem
-  // }
-  // .homeskills{
-  //   h2{font-size: 1.3rem}
-  //   ul li{
-  //     font-size: 1rem;
-  //     letter-spacing: 0.1rem;
-  //   }
-  // }
   .components{
     padding: 5rem 5rem 0 4rem;
   }
-  // .project-text-img-split{
-  //   .split-left{
-  //     p{
-  //       line-height: 1.3rem;
-  //       font-weight: 100;
-  //       letter-spacing: 0.1rem;
-  //       margin-top: 0;
-  //       font-size: 0.9rem;
-  //     }
-  //   }
-  // }
 }
 
 /*SMALL TO BIG TABLETS: from 768px to 1023px*/
 
 @media (max-width: 1023px){
-  //NAV
-  #nav{
-    background-color: blue;
-    // .nav-logo{
-    //   width: 70%;
-    //   margin-left: 15%;
-    // }
-  }
-  // #nav-links {
-    // padding: 0;
-  //   li{
-  //     font-size: 1rem;
-  //     text-align: center;
-  //   }
-  // }
   .project-container{
     padding-bottom: 2.5rem;
   }
@@ -115,78 +76,12 @@ body{
   .components{
     padding: 4rem 5rem 0 4rem;
   }
-  //HOME
-  // #home-container{
-  //   header{
-  //     h1 {font-size: 2rem}
-  //     h2 {font-size: 1.5rem}
-  //   }
-  // }
-  // #skills-container{
-  //   h1{font-size: 3rem}
-  // }
   
-  // .homeskills{
-    // h2{
-    //   font-size: 1.2rem;
-    //   font-weight: 600;
-    // }
-  //   ul{
-  //     li{
-  //       font-size: 1rem;
-  //       letter-spacing: 0.1rem;
-  //     }
-  //   }
-  // }
-  //DEV
-  // .project-text-img-split {
-  //   margin: 2rem 0 1rem 0;
-  //   .split-left {
-  //     p {
-  //       line-height: 1.3rem;
-  //       font-weight: 100;
-  //       letter-spacing: 0.05rem;
-  //       margin-top: 0;
-  //       font-size: 0.8rem;
-  //     }
-  //   }
-  // }
-  // .dev-btn {
-  //   font-size: 0.8rem;
-  // }
-  
-  //CONTACT
-  // #contact-container h2 {font-size: 1.2rem;}
-  // #form input {
-  //   height: 1.5rem;
-  //   font-size: 0.9rem;
-  //   #contact-submit-btn{
-  //     height: 2rem;
-  //   }
-  // }
-  // #form textarea {
-  //   font-size: 0.9rem;
-  // }
 }
 
 /*PHONES TO SMALL TABLETS: from 481px to 767px*/
 
 @media (max-width: 767px){
-  //NAV
-  #nav{
-    background-color: red;
-    // #nav-links {
-    //   padding: 0;
-    //   li{
-    //     font-size: 0.9rem;
-    //   }
-    // }
-  }
-  // .nav-icons{
-  //   flex-direction: column;
-  //   margin: 5rem 0 0 calc(50% - 12.5px) !important;
-  // }
-
   .components{
     padding: 3rem 3rem 0 3rem;
   }
@@ -196,78 +91,14 @@ body{
     letter-spacing: 0.05rem;
     font-size: 0.8rem;
   }
-  // .project-text-img-split {
-  //   display: block;
-  //   .split-left{
-  //     width: 100%;
-  //     p {
-  //       line-height: 1.3rem;
-  //       font-weight: 100;
-  //       letter-spacing: 0.05rem;
-  //       margin-top: 0;
-  //       font-size: 0.8rem;
-  //     }
-  //   }
-  //   img{
-  //     width: 100%;
-  //     padding-top: 1rem;
-  //   }
-  // }
-  //HOME
-  // #home-container {
-  //   header{
-  //     h1{font-size: 1.6rem}
-  //     h2{font-size: 1.5rem;}
-  //   }
-  // }
-  // #skills-container h1{
-  //     font-size: 2.5rem;
-  //   }
-  // .homeskills{
-  //   h2{
-  //     font-size: 1rem;
-  //     font-weight: 500;
-  //   }
-  //   ul {
-  //     li{ 
-  //       font-size: 0.9rem;
-  //       letter-spacing: 0.1rem; 
-  //     }
-  //   }
-  // }
-  //DEV
-  // .dev-btn {
-  //   font-size: 0.8rem;
-  // }
-  //CONTACT
-  // #form input[type=submit]{
-  //   height: 2.5rem;
-  //   font-size: 0.9rem;
-  // }
 }
  
 /*Small phones: from 0 to 480px*/
 
 @media (max-width: 480px) {
-  //NAV
   .nav-burger{
     display: block;
   }
-  // #nav{
-  //   display: none;
-  // }
-  // #nav-links li {
-  //   font-size: 1rem;
-  //   font-weight: 200;
-  // }
-  // .nav-logo{
-  //   width: 50%;
-  //   margin-left: 25%;
-  //   margin-top: 25%;
-  // }
-  // .nav-icons{
-  //   display: flex !important;
-  // }
   .bm-burger-button {
     position: fixed;
     width: 2.3rem;
@@ -288,15 +119,15 @@ body{
     transition: all 0.5s;
   }
   .bm-menu {
-    background: #1f3490;
+    background: #11193e;
   }
   .bm-cross{
     background: white;
     height: 20px !important;
   }
   .bm-cross-button{
-    right: 15%;
-    top: 4%;
+    right: 2.3rem !important;
+    top: 2rem !important;
   }
 
   #right-view{
@@ -307,53 +138,8 @@ body{
   .components{
     padding: 3rem 2rem 0 2rem;
   }
-  //DEV
-  // .dev-btn{
-  //   width: 35%;
-  //   padding: 0.8rem;
-  // }
- 
-  //HOME
-  // #home-container {
-  //   padding-top: 5rem;
-  // }
-
-  // #home-container header h2 {
-  //   font-size: 1.1rem;
-  // }
-  // .skills-list{
-  //   left: 0.5rem;
-  // }
-  // #skills-container h1 {
-  //   font-size: 2rem;
-  // }
-  // .homeskills{
-  //   width: 33%;
-  //   h2{
-  //     font-weight: 500;
-  //   }
-  // }
-  // .homeskills ul li{
-  //   font-size: 0.8rem;
-  // }
-  //UX
+  
   .image-gallery-left-nav, .image-gallery-right-nav {
-    font-size: 2rem;
+    font-size: 2em;
   }
-  //MISC
-  // #misc-container{
-  //   padding: 3rem 0;
-  // }
-  // #illustration-div .misc-column {
-  //   margin: 0 0.1rem;
-  // }
-  //CONTACT
-  // #form{
-  //   margin: 0 17.5%;
-  //   width: 65%;
-  // }
-  // #contact-container{
-  //   padding-bottom: 0;
-  // }
-
 }
