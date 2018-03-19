@@ -8,6 +8,9 @@
     "start": "node server",
     "start-dev": "webpack -w & nodemon server"
   },
+  "engines": {
+    "node": "8.9.1"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
