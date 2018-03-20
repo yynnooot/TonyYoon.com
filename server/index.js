@@ -30,7 +30,7 @@ app.post('/',(req,res)=>{
 })
 
 app.use('*',(req,res) => {
-    res.sendFile(path.resolve(__dirname, '..', 'public', 'index.html'))
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'))
   })
 
 app.use((err, req, res, next) => {
