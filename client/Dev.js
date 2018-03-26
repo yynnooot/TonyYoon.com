@@ -31,13 +31,10 @@ export default class Dev extends Component {
   
   render() {
     return (
-
       <div className="components" id="dev-container">
         <h1>Dev Projects<span>.</span></h1>
-
         <DevProject project={this.state.codecombat}/>
         <DevProject project={this.state.travelpedia}/>
-
       </div>
     )
   }
