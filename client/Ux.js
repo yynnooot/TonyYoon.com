@@ -6,7 +6,7 @@ export default class Ux extends Component {
   constructor(){
     super()
     this.state = {
-      heartbeat: {title:"HeartBeat",
+      heartbeat: {title:"HEARTBEAT",
                   description:"HeartBeat is an application for the Apple Watch. It is designed for patients with pre-existing heart conditions, and allows users to monitor their heart activity while recording any symptoms they may experience. The data collected can then be used by their physicians in providing best possible care.",
                   images:[{
                     original:'assets/heart1.png',
@@ -31,7 +31,7 @@ export default class Ux extends Component {
                     thumbnail:'assets/heart7.png'
                   }],
                   route:"/ux_heartbeat"},
-      huddle: {title:"Huddle Insights",
+      huddle: {title:"HUDDLE INSIGHTS",
                 description:"Huddle Insights, a SaaS platform by Value Stream Labs, is a social data sharing platform. It allows market analysts, consultants, and researchers to join \"huddles\" and share data and insights with other members. Our team was tasked with creating wireframes for the huddle experience.",
                 images:[{
                   original:'assets/huddle1.png',
@@ -66,7 +66,7 @@ export default class Ux extends Component {
 
         <div id="uxprocess-container" className="project-container">
           <div className="project-header">
-            <h2>My Process</h2>
+            <h2>My UX Process</h2>
             <p>My process is about gaining an understanding of the big picture, identifying goals and pain-points, and taking a User-Centered approach in designing usable solutions. The methods and techniques I use within each phase of my process may vary depending on the design challenges.</p>
             <img src="/assets/uxprocess.jpg" alt="my-ux-process"/>
           </div>

@@ -6,7 +6,7 @@ export default class Dev extends Component {
     super()
     this.state = {
       travelpedia: {
-        title:"Travelpedia",
+        title:"TRAVELPEDIA",
         description:"Travelpedia is a mobile app built with React-Native, Redux, and Expo. It allows users to get information about historical landmarks and architecture through images they take or have stored on their smart phones. Travelpedia utilizes Google Cloud Vision API for image recognition and Wikipedia to retrieve insightful information about the landmark.",
         images:[
           '/assets/travel_mobile.png',
@@ -16,7 +16,7 @@ export default class Dev extends Component {
         route:"https://github.com/yynnooot/TravelpediaMobile"
       },
       codecombat: {
-        title:"Code Combat",
+        title:"CODE COMBAT",
         description:'Our team noticed that the learning resources available to new programmers were not very engaging. So we wanted to create an application that provides a fun experience for new and seasoned programmers alike. We built CodeCombat, an application where developers can improve their coding skills through solo training challenges, or live coding battles - where Users of similar rank go head-to-head and battle for points and rank.',
         images:[
           '/assets/codecombat-landing.png',

@@ -7,7 +7,7 @@
 @import 'contact';
 
 body{
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next', 'Helvetica';
   margin:0;
   padding: 0;
   height: 100%;
@@ -42,8 +42,8 @@ body{
 }
 .project-header{
   h2{
-    color: #ffd088;
-    font-family: 'Arvo', serif;
+    color: white;
+    font-family: 'Avenir Next', 'Helvetica';
     border-bottom: 1px solid $salmon;
     width: 30%;
     padding-bottom: 0.5rem;
