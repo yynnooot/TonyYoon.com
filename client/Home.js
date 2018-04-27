@@ -7,7 +7,7 @@ export default class Home extends Component {
     super()
     this.state = {
       front: {title: 'Front-End',
-              list: ['HTML5 / CSS3', 'Javascript', 'React', 'Redux']
+              list: ['HTML5 / CSS3', 'Javascript', 'React/React-Native', 'Redux']
       },
       back: {title: 'Back-End',
               list: ['Node', 'Express', 'PostgreSQL', 'Sequelize']
