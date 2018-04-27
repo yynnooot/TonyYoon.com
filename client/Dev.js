@@ -12,7 +12,7 @@ export default class Dev extends Component {
           '/assets/travel_mobile.png',
           '/assets/travel-eiffel.png'
         ],
-        body:"How it works: I use Expo's built-in asynchronous functions to obtain a Base-64 string from an image. I then send the base-64 to Google Cloud Vision API in a Post request using axios - if image recognition is successful, Google responds with a JSON object which I parse to obtain the title of the landmark within the image. After receiving name of the landmark, I query the Wikipedia API to get summary description of the landmark. I also built a simpler web application where Users can choose images from their computer. This was built with Node, Express, React, and SCSS.",
+        body:"How it works: I use Expo's built-in asynchronous functions to obtain a base-64 string from an image. I then send the base-64 to Google Cloud Vision API in a Post request - if the image recognition is successful, Google responds with a JSON object which I parse to obtain the name of the landmark within the image. After receiving name of the landmark, I query the Wikipedia API to get a summary description of the landmark. I also built a simpler web app where Users can choose images from their computer. This was built with Node, Express, React, and SCSS.",
         route:"https://github.com/yynnooot/TravelpediaMobile"
       },
       codecombat: {
