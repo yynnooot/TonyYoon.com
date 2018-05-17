@@ -15,10 +15,9 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         options: {
-          presets: ['react', 'env'] // if you aren't using 'babel-preset-env', then omit the 'env'
+          presets: ['react', 'env'] 
         }
       },
-      // use the style-loader/css-loader combos for anything matching the .css extension
       {
         test: /\.scss$/,
         use: [

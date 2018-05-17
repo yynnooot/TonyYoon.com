@@ -6,9 +6,7 @@ const bodyParser = require('body-parser');
 
 require('dotenv').config();
 
-
 app.use(morgan('dev'));
-
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,7 +22,11 @@ app.post('/',(req,res)=>{
     subject: req.body.subject,
     html: `<html><p>name: ${req.body.name} <br/>email: ${req.body.email} <br/>message: ${req.body.message}</p></html>`
   };
-  mailgun.messages().send(data, function (error, body) {
+  mailgun.messages().send(data, function(error, body){
+    if(error){
+      console.error(error);
+      return;
+    }
     res.send(body)
   });
 })

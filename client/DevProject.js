@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DevProject = props => 
+const DevProject = props =>
  (
   <div className="project-container">
 
